@@ -103,6 +103,12 @@ render(){
        </View>  
        <View style={styles.exit}>
        </View>
+       <TouchableOpacity
+           style={{backgroundColor:'dimgrey',width:'30%',height:'25%',alignItems:'center',borderRadius:15,justifyContent:'center',opacity:0.9}}
+           onPress={() => {this.props.navigation.navigate('Giris')}}
+            >
+          <Text style={{color:'white'}}>ŞİFRE DEĞİŞTİR</Text>
+          </TouchableOpacity>
   </ImageBackground>   
  </SafeAreaView>        
 </ScrollView>   
@@ -159,7 +165,7 @@ render(){
       justifyContent:'center',
       },
      icon1: {
-       marginVertical:5,
+      
        flex:1,
        flexDirection:"row",
        alignItems:'center',
